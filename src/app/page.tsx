@@ -61,7 +61,7 @@ export default function Home() {
               </h1>
 
               <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed glass-card p-6 rounded-2xl">
-                Online Maths classes for Class 3 to 12 — choose one-on-one attention or a small batch of up to 10 students. Built for learners in India and around the world.
+                Online Maths classes for Class 1 to 12 — choose one-on-one attention or a small batch of up to 10 students. Built for learners in India and around the world.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
@@ -174,7 +174,7 @@ export default function Home() {
 
             <div className="w-full md:w-2/3 space-y-6">
               <div className="text-primary font-bold tracking-wider uppercase">About me</div>
-              <h2 className="text-3xl md:text-5xl font-bold leading-tight">Hi, I'm your Maths teacher at NYmath.com</h2>
+              <h2 className="text-3xl md:text-5xl font-bold leading-tight">Hi, I'm <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Nitin Yadav</span>, Founder & Maths Teacher at NYmath.com</h2>
               <div className="text-lg text-foreground/70 space-y-4 leading-relaxed glass-card p-6 rounded-2xl">
                 <p>I've spent 8 years teaching Maths to school students, helping over 300 learners build real confidence with numbers — not just memorise steps for an exam.</p>
                 <p>Every student learns differently, so I shape each session around how they think, at a pace that actually works for them.</p>
