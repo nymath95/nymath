@@ -8,6 +8,28 @@ import {
   Layers, Shapes, Award, TrendingUp, User, Users2, School, GraduationCap, Calendar
 } from "lucide-react";
 
+// Lucide removed brand icons, so we provide simple SVG components matching their style:
+const Instagram = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
+const Linkedin = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" />
+  </svg>
+);
+const Youtube = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" /><path d="m10 15 5-3-5-3z" />
+  </svg>
+);
+const Facebook = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  </svg>
+);
+
 export default function Home() {
   const WHATSAPP_NUMBER = "7804028258"; // Adjust this as needed
   const WHATSAPP_LINK = `https://wa.me/91${WHATSAPP_NUMBER}`;
@@ -176,21 +198,37 @@ export default function Home() {
               <div className="text-primary font-bold tracking-wider uppercase">About me</div>
               <h2 className="text-3xl md:text-5xl font-bold leading-tight">Hi, I'm <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Nitin Yadav</span>, Founder & Maths Teacher at NYmath.com</h2>
               <div className="text-lg text-foreground/70 space-y-4 leading-relaxed glass-card p-6 rounded-2xl">
-                <p>I've spent 8 years teaching Maths to school students, helping over 300 learners build real confidence with numbers — not just memorise steps for an exam.</p>
+                <p>I've spent 10+ years teaching Maths to school students, helping over 1200+ learners build real confidence with numbers — not just memorise steps for an exam.</p>
                 <p>Every student learns differently, so I shape each session around how they think, at a pace that actually works for them.</p>
               </div>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
                 {[
                   { icon: <School size={18} className="text-primary" />, text: "B.Ed, Mathematics" },
-                  { icon: <Clock size={18} className="text-primary" />, text: "8+ years experience" },
+                  { icon: <Clock size={18} className="text-primary" />, text: "10+ years experience" },
                   { icon: <GraduationCap size={18} className="text-primary" />, text: "CBSE, ICSE & IB expert" },
-                  { icon: <Users size={18} className="text-primary" />, text: "300+ students taught" }
+                  { icon: <Users size={18} className="text-primary" />, text: "1200+ students taught" }
                 ].map((cred, i) => (
                   <div key={i} className="flex items-center gap-3 bg-white px-4 py-3 rounded-xl shadow-sm border border-foreground/5 font-medium">
                     {cred.icon} {cred.text}
                   </div>
                 ))}
+              </div>
+
+              <div className="flex items-center gap-4 pt-6 border-t border-foreground/5 mt-6">
+                <span className="text-foreground/60 font-bold text-sm uppercase tracking-wider">Connect with me:</span>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-foreground/50 hover:text-[#E1306C] hover:shadow-md transition-all border border-foreground/5">
+                  <Instagram size={18} />
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-foreground/50 hover:text-[#0A66C2] hover:shadow-md transition-all border border-foreground/5">
+                  <Linkedin size={18} />
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-foreground/50 hover:text-[#FF0000] hover:shadow-md transition-all border border-foreground/5">
+                  <Youtube size={18} />
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-foreground/50 hover:text-[#1877F2] hover:shadow-md transition-all border border-foreground/5">
+                  <Facebook size={18} />
+                </a>
               </div>
             </div>
           </div>
@@ -385,9 +423,23 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-foreground/10 py-12 px-6 bg-white z-10 relative">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             NYmath.com
+          </div>
+          <div className="flex items-center gap-6">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-[#E1306C] hover:-translate-y-1 transition-all">
+              <Instagram size={20} />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-[#0A66C2] hover:-translate-y-1 transition-all">
+              <Linkedin size={20} />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-[#FF0000] hover:-translate-y-1 transition-all">
+              <Youtube size={20} />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-[#1877F2] hover:-translate-y-1 transition-all">
+              <Facebook size={20} />
+            </a>
           </div>
           <p className="text-foreground/50 text-sm">© {new Date().getFullYear()} NYmath. All rights reserved.</p>
         </div>
