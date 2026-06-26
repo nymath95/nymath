@@ -42,7 +42,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 glass-card border-b border-white/20 px-6 py-4 transition-all">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            NYmath
+            NYmaths
           </div>
           <div className="hidden md:flex gap-8 text-foreground/80 font-medium">
             <a href="#levels" className="hover:text-primary transition-colors">Classes</a>
@@ -196,7 +196,7 @@ export default function Home() {
 
             <div className="w-full md:w-2/3 space-y-6">
               <div className="text-primary font-bold tracking-wider uppercase">About me</div>
-              <h2 className="text-3xl md:text-5xl font-bold leading-tight">Hi, I'm <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Nitin Yadav</span>, Founder & Maths Teacher at NYmath.com</h2>
+              <h2 className="text-3xl md:text-5xl font-bold leading-tight">Hi, I'm <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Nitin Yadav</span>, Founder & Maths Teacher at nymaths.com</h2>
               <div className="text-lg text-foreground/70 space-y-4 leading-relaxed glass-card p-6 rounded-2xl">
                 <p>I've spent 10+ years teaching Maths to school students, helping over 1200+ learners build real confidence with numbers — not just memorise steps for an exam.</p>
                 <p>Every student learns differently, so I shape each session around how they think, at a pace that actually works for them.</p>
@@ -269,7 +269,7 @@ export default function Home() {
         <section className="py-24 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <div className="text-primary font-bold tracking-wider uppercase mb-2">Why NYmath.com</div>
+              <div className="text-primary font-bold tracking-wider uppercase mb-2">Why nymaths.com</div>
               <h2 className="text-3xl md:text-5xl font-bold mb-4">Not just a class, a complete system</h2>
               <p className="text-foreground/70 max-w-2xl mx-auto text-lg">Learning support that goes well beyond the class hour.</p>
             </div>
@@ -425,7 +425,7 @@ export default function Home() {
       <footer className="border-t border-foreground/10 py-12 px-6 bg-white z-10 relative">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            NYmath.com
+            nymaths.com
           </div>
           <div className="flex items-center gap-6">
             <a href="#" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-[#E1306C] hover:-translate-y-1 transition-all">
@@ -441,7 +441,7 @@ export default function Home() {
               <Facebook size={20} />
             </a>
           </div>
-          <p className="text-foreground/50 text-sm">© {new Date().getFullYear()} NYmath. All rights reserved.</p>
+          <p className="text-foreground/50 text-sm">© {new Date().getFullYear()} NYmaths. All rights reserved.</p>
         </div>
       </footer>
 
