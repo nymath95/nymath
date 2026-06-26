@@ -128,12 +128,12 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <div className="text-primary font-bold tracking-wider uppercase mb-2">Classes covered</div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-4">Maths, Class 3 to 12</h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-4">Maths, Class 1 to 12</h2>
               <p className="text-foreground/70 max-w-2xl mx-auto text-lg">CBSE, ICSE, IB and international curricula — structured for every level.</p>
             </div>
             <div className="grid md:grid-cols-4 gap-6">
               {[
-                { icon: <Layers size={32} />, cls: "Class 3–5", title: "Foundation", desc: "Building number sense" },
+                { icon: <Layers size={32} />, cls: "Class 1–5", title: "Foundation", desc: "Building number sense" },
                 { icon: <Shapes size={32} />, cls: "Class 6–8", title: "Middle school", desc: "Algebra & geometry basics" },
                 { icon: <Award size={32} />, cls: "Class 9–10", title: "Board prep", desc: "CBSE / ICSE / IGCSE" },
                 { icon: <TrendingUp size={32} />, cls: "Class 11–12", title: "Senior secondary", desc: "Calculus, Algebra II, IB/AP" },
@@ -329,21 +329,21 @@ export default function Home() {
                 {
                   title: "One-on-one",
                   priceIN: "₹3,500",
-                  priceUS: "$120",
+                  priceUS: "$200",
                   features: ["8 classes a month", "Fully personalised pace", "WhatsApp doubt support"]
                 },
                 {
                   title: "Small batch (2–5)",
-                  priceIN: "₹2,200",
-                  priceUS: "$75",
+                  priceIN: "₹1,600",
+                  priceUS: "$150",
                   featured: true,
                   badge: "Most popular",
                   features: ["8 classes a month", "Weekly test + revision", "WhatsApp doubt support", "Monthly progress report"]
                 },
                 {
                   title: "Group batch (≤10)",
-                  priceIN: "₹1,400",
-                  priceUS: "$45",
+                  priceIN: "₹1,000",
+                  priceUS: "$120",
                   features: ["8 classes a month", "Weekly test", "WhatsApp doubt support"]
                 }
               ].map((plan, i) => (
